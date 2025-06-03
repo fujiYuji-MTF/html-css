@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #quadrado {
+            width: 150px;
+            height: 150px;
+            background-color: black;
+        }
+        </style>
+        <title>Alterando a cor</title>
+    </head>
+    <body style="background-color: powderblue;">
+        <h1>Clicar no botão, altera a cor</h1>
+        <div id="quadrado"></div>
+        <button onclick="MudarCor()">mudar cor</button>
+        <script>
+        function MudarCor() {
+            const quadrado = document.getElementById("quadrado");
+            quadrado.style.backgroundColor = quadrado.style.backgroundColor === "black" ? "blue" : "black";
+        }
+    </script>
+    </body>
+</html>
